@@ -1,22 +1,26 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="The Ideal Institute of Engineering is developed to produce hardcore professionals who will venture out to take up the challenge and to participate in the ...">
+    <meta name="keywords" content="Engineering, Kalyani, Technology, JEE, wbjee, jee main, cse, computer science">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IIE Kalyani Second Semester Students</title>
     <link rel="stylesheet" href="style.css">
-    <!-- <link rel="shortcut icon" href="../another1/favicon1.ico" type="image/x-icon"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
         integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="iie.png" type="image/x-icon">
-    
+    <!-- google search console verification -->
+    <meta name="google-site-verification" content="76ZAtSpf2ixQMb6ZSSUgwb8gbsVFsquiQPbQxRsHxb4" />
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" id="sec">
+        <div class="toggle"></div>
         <div class="card">
             <div class="imgBx">
                 <img src="imgs/rakesh.jpg" alt="not available">
@@ -180,7 +184,13 @@
     </div>
 
    
-
+<script>
+    const sec = document.querySelector("#sec");
+    const toggle = document.querySelector(".toggle");
+    toggle.onclick = function(){
+        sec.classList.toggle('dark')
+    }
+</script>
 </body>
 
 </html>
