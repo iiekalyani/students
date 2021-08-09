@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,7 +19,8 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" id="sec">
+        <div class="toggle"></div>
         <div class="card">
             <div class="imgBx">
                 <img src="imgs/rakesh.jpg" alt="not available">
@@ -182,7 +184,13 @@
     </div>
 
    
-
+<script>
+    const sec = document.querySelector("#sec");
+    const toggle = document.querySelector(".toggle");
+    toggle.onclick = function(){
+        sec.classList.toggle('dark')
+    }
+</script>
 </body>
 
 </html>

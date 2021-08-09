@@ -23,6 +23,7 @@ body
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    transition: background 0.5s;
 }
 .container .card
 {
@@ -33,7 +34,12 @@ body
     margin: 25px;
     border-radius: 20px;
     overflow: hidden;
+    transition: background 0.5s;
     box-shadow: 0 5px 45px rgba(0, 0, 0.5, 0.5);
+}
+div.dark .card
+{
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.5);
 }
 .container .card .imgBx
 {
@@ -129,3 +135,37 @@ body
     background: #03a9f4;
 }
 
+.toggle
+{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #404852;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.toggle::before
+{
+    content: '\f186';
+    font-family: fontAwesome;
+    color: #ebf5fc;
+}
+div.dark .toggle::before
+{
+    content: '\f185';
+    color: #e3f112;
+}
+
+div.dark
+{
+    background: #24292d;
+}
+div.dark .toggle
+{
+    background: #ebf5fc;
+}
